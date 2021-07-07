@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RecruitmentManagementSystemDBModelStoreContainer" CdmEntityContainer="RecruitmentManagementSystemDBEntities">
+    <EntitySetMapping Name="C__EFMigrationsHistory">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.C__EFMigrationsHistory">
+        <MappingFragment StoreEntitySet="__EFMigrationsHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdresaAplikantas">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AdresaAplikanta">
+        <MappingFragment StoreEntitySet="AdresaAplikanta">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Drzava" ColumnName="Drzava" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdresaKompanijes">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AdresaKompanije">
+        <MappingFragment StoreEntitySet="AdresaKompanije">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Drzava" ColumnName="Drzava" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoleClaims">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetRoleClaim">
+        <MappingFragment StoreEntitySet="AspNetRoleClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NormalizedName" ColumnName="NormalizedName" />
+          <ScalarProperty Name="ConcurrencyStamp" ColumnName="ConcurrencyStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="ProviderDisplayName" ColumnName="ProviderDisplayName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NormalizedUserName" ColumnName="NormalizedUserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NormalizedEmail" ColumnName="NormalizedEmail" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="ConcurrencyStamp" ColumnName="ConcurrencyStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEnd" ColumnName="LockoutEnd" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserTokens">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.AspNetUserToken">
+        <MappingFragment StoreEntitySet="AspNetUserTokens">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Obrazovanjes">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.Obrazovanje">
+        <MappingFragment StoreEntitySet="Obrazovanje">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Zvanje" ColumnName="Zvanje" />
+          <ScalarProperty Name="StepenCertifikata" ColumnName="StepenCertifikata" />
+          <ScalarProperty Name="NazivObrazovneInstitucije" ColumnName="NazivObrazovneInstitucije" />
+          <ScalarProperty Name="Drzava" ColumnName="Drzava" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="ProfilAplikantaId" ColumnName="ProfilAplikantaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oglas">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.Ogla">
+        <MappingFragment StoreEntitySet="Oglas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RadnoMjesto" ColumnName="RadnoMjesto" />
+          <ScalarProperty Name="DodatneInformacije" ColumnName="DodatneInformacije" />
+          <ScalarProperty Name="PocetakPrijave" ColumnName="PocetakPrijave" />
+          <ScalarProperty Name="DatumIsteka" ColumnName="DatumIsteka" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ProfilKompanijeId" ColumnName="ProfilKompanijeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfilAplikantas">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.ProfilAplikanta">
+        <MappingFragment StoreEntitySet="ProfilAplikanta">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="KontakTelefon" ColumnName="KontakTelefon" />
+          <ScalarProperty Name="AdresaId" ColumnName="AdresaId" />
+          <ScalarProperty Name="ProfilaSlika" ColumnName="ProfilaSlika" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfilKompanijes">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.ProfilKompanije">
+        <MappingFragment StoreEntitySet="ProfilKompanije">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Misija" ColumnName="Misija" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="KontaktTelefon" ColumnName="KontaktTelefon" />
+          <ScalarProperty Name="WebSiteURL" ColumnName="WebSiteURL" />
+          <ScalarProperty Name="AdresaId" ColumnName="AdresaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RadnoIskustvoes">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.RadnoIskustvo">
+        <MappingFragment StoreEntitySet="RadnoIskustvo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NazivKompanije" ColumnName="NazivKompanije" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="RadnaPozicija" ColumnName="RadnaPozicija" />
+          <ScalarProperty Name="DatumPocetka" ColumnName="DatumPocetka" />
+          <ScalarProperty Name="DatumZavrsetka" ColumnName="DatumZavrsetka" />
+          <ScalarProperty Name="ProfilAplikantaId" ColumnName="ProfilAplikantaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OpisniAtribut" ColumnName="OpisniAtribut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vjestines">
+      <EntityTypeMapping TypeName="RecruitmentManagementSystemDBModel.Vjestine">
+        <MappingFragment StoreEntitySet="Vjestine">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vjestina" ColumnName="Vjestina" />
+          <ScalarProperty Name="NivoPoznavanja" ColumnName="NivoPoznavanja" />
+          <ScalarProperty Name="ProfilAplikantaId" ColumnName="ProfilAplikantaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="RecruitmentManagementSystemDBModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OglasProfilAplikanta" TypeName="RecruitmentManagementSystemDBModel.OglasProfilAplikanta" StoreEntitySet="OglasProfilAplikanta">
+      <EndProperty Name="Oglas">
+        <ScalarProperty Name="Id" ColumnName="OglasiId" />
+      </EndProperty>
+      <EndProperty Name="ProfilAplikanta">
+        <ScalarProperty Name="Id" ColumnName="ProfiliAplikanataId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

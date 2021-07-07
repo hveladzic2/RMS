@@ -1,0 +1,28 @@
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\RepositoryServices.deps.json
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\RepositoryServices.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\RepositoryServices.pdb
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Recruitment Management System.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\RMSLibrary.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\Recruitment Management System.pdb
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\bin\Release\netcoreapp3.1\RMSLibrary.pdb
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RepositoryServices\obj\Release\netcoreapp3.1\RepositoryServices.pdb

@@ -1,0 +1,9 @@
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\bin\Release\netstandard2.0\RMSLibrary.deps.json
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\bin\Release\netstandard2.0\RMSLibrary.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\bin\Release\netstandard2.0\RMSLibrary.pdb
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.csprojAssemblyReference.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.dll
+C:\Users\LENOVO\Desktop\Recruitment-Management-System\RMS\Recruitment Management System\RMSLibrary\obj\Release\netstandard2.0\RMSLibrary.pdb

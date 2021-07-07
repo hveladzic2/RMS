@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecruitmentManagementSystemDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__EFMigrationsHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdresaAplikanta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Drzava" Type="nvarchar(max)" />
+    <Property Name="Grad" Type="nvarchar(max)" />
+    <Property Name="Ulica" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AdresaKompanije">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Drzava" Type="nvarchar(max)" />
+    <Property Name="Grad" Type="nvarchar(max)" />
+    <Property Name="Ulica" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetRoleClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedName" Type="nvarchar" MaxLength="256" />
+    <Property Name="ConcurrencyStamp" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="ProviderDisplayName" Type="nvarchar(max)" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedUserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="ConcurrencyStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEnd" Type="datetimeoffset" Precision="7" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserTokens">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Obrazovanje">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zvanje" Type="nvarchar(max)" />
+    <Property Name="StepenCertifikata" Type="nvarchar(max)" />
+    <Property Name="NazivObrazovneInstitucije" Type="nvarchar(max)" />
+    <Property Name="Drzava" Type="nvarchar(max)" />
+    <Property Name="Grad" Type="nvarchar(max)" />
+    <Property Name="ProfilAplikantaId" Type="int" />
+  </EntityType>
+  <EntityType Name="Oglas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RadnoMjesto" Type="nvarchar(max)" />
+    <Property Name="DodatneInformacije" Type="nvarchar(max)" />
+    <Property Name="PocetakPrijave" Type="int" Nullable="false" />
+    <Property Name="DatumIsteka" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="ProfilKompanijeId" Type="int" />
+  </EntityType>
+  <EntityType Name="OglasProfilAplikanta">
+    <Key>
+      <PropertyRef Name="OglasiId" />
+      <PropertyRef Name="ProfiliAplikanataId" />
+    </Key>
+    <Property Name="OglasiId" Type="int" Nullable="false" />
+    <Property Name="ProfiliAplikanataId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProfilAplikanta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ime" Type="nvarchar(max)" />
+    <Property Name="Prezime" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="                      Telefon" Type="nvarchar(max)" />
+    <Property Name="AdresaId" Type="int" />
+    <Property Name="ProfilaSlika" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ProfilKompanije">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar(max)" />
+    <Property Name="Misija" Type="nvarchar(max)" />
+    <Property Name="Logo" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="KontaktTelefon" Type="nvarchar(max)" />
+    <Property Name="WebSiteURL" Type="nvarchar(max)" />
+    <Property Name="AdresaId" Type="int" />
+  </EntityType>
+  <EntityType Name="RadnoIskustvo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazivKompanije" Type="nvarchar(max)" />
+    <Property Name="Adresa" Type="nvarchar(max)" />
+    <Property Name="RadnaPozicija" Type="nvarchar(max)" />
+    <Property Name="DatumPocetka" Type="int" Nullable="false" />
+    <Property Name="DatumZavrsetka" Type="int" Nullable="false" />
+    <Property Name="ProfilAplikantaId" Type="int" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OpisniAtribut" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Vjestine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vjestina" Type="nvarchar(max)" />
+    <Property Name="NivoPoznavanja" Type="nvarchar(max)" />
+    <Property Name="ProfilAplikantaId" Type="int" />
+  </EntityType>
+  <Association Name="FK_AspNetRoleClaims_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetRoleClaims" Type="Self.AspNetRoleClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetRoleClaims">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AspNetUserClaims_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AspNetUserLogins_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AspNetUserRoles_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AspNetUserRoles_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AspNetUserTokens_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserTokens" Type="Self.AspNetUserTokens" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserTokens">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Obrazovanje_ProfilAplikanta_ProfilAplikantaId">
+    <End Role="ProfilAplikanta" Type="Self.ProfilAplikanta" Multiplicity="0..1" />
+    <End Role="Obrazovanje" Type="Self.Obrazovanje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilAplikanta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Obrazovanje">
+        <PropertyRef Name="ProfilAplikantaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oglas_ProfilKompanije_ProfilKompanijeId">
+    <End Role="ProfilKompanije" Type="Self.ProfilKompanije" Multiplicity="0..1" />
+    <End Role="Oglas" Type="Self.Oglas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilKompanije">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Oglas">
+        <PropertyRef Name="ProfilKompanijeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oglas_Status_StatusId">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="Oglas" Type="Self.Oglas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Oglas">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OglasProfilAplikanta_Oglas_OglasiId">
+    <End Role="Oglas" Type="Self.Oglas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OglasProfilAplikanta" Type="Self.OglasProfilAplikanta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oglas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OglasProfilAplikanta">
+        <PropertyRef Name="OglasiId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OglasProfilAplikanta_ProfilAplikanta_ProfiliAplikanataId">
+    <End Role="ProfilAplikanta" Type="Self.ProfilAplikanta" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OglasProfilAplikanta" Type="Self.OglasProfilAplikanta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilAplikanta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OglasProfilAplikanta">
+        <PropertyRef Name="ProfiliAplikanataId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProfilAplikanta_AdresaAplikanta_AdresaId">
+    <End Role="AdresaAplikanta" Type="Self.AdresaAplikanta" Multiplicity="0..1" />
+    <End Role="ProfilAplikanta" Type="Self.ProfilAplikanta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdresaAplikanta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProfilAplikanta">
+        <PropertyRef Name="AdresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProfilKompanije_AdresaKompanije_AdresaId">
+    <End Role="AdresaKompanije" Type="Self.AdresaKompanije" Multiplicity="0..1" />
+    <End Role="ProfilKompanije" Type="Self.ProfilKompanije" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdresaKompanije">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProfilKompanije">
+        <PropertyRef Name="AdresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RadnoIskustvo_ProfilAplikanta_ProfilAplikantaId">
+    <End Role="ProfilAplikanta" Type="Self.ProfilAplikanta" Multiplicity="0..1" />
+    <End Role="RadnoIskustvo" Type="Self.RadnoIskustvo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilAplikanta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RadnoIskustvo">
+        <PropertyRef Name="ProfilAplikantaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vjestine_ProfilAplikanta_ProfilAplikantaId">
+    <End Role="ProfilAplikanta" Type="Self.ProfilAplikanta" Multiplicity="0..1" />
+    <End Role="Vjestine" Type="Self.Vjestine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProfilAplikanta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Vjestine">
+        <PropertyRef Name="ProfilAplikantaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RecruitmentManagementSystemDBModelStoreContainer">
+    <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdresaAplikanta" EntityType="Self.AdresaAplikanta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdresaKompanije" EntityType="Self.AdresaKompanije" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoleClaims" EntityType="Self.AspNetRoleClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserTokens" EntityType="Self.AspNetUserTokens" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Obrazovanje" EntityType="Self.Obrazovanje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oglas" EntityType="Self.Oglas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OglasProfilAplikanta" EntityType="Self.OglasProfilAplikanta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProfilAplikanta" EntityType="Self.ProfilAplikanta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProfilKompanije" EntityType="Self.ProfilKompanije" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RadnoIskustvo" EntityType="Self.RadnoIskustvo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vjestine" EntityType="Self.Vjestine" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AspNetRoleClaims_AspNetRoles_RoleId" Association="Self.FK_AspNetRoleClaims_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetRoleClaims" EntitySet="AspNetRoleClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AspNetUserClaims_AspNetUsers_UserId" Association="Self.FK_AspNetUserClaims_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AspNetUserLogins_AspNetUsers_UserId" Association="Self.FK_AspNetUserLogins_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AspNetUserRoles_AspNetRoles_RoleId" Association="Self.FK_AspNetUserRoles_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AspNetUserRoles_AspNetUsers_UserId" Association="Self.FK_AspNetUserRoles_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AspNetUserTokens_AspNetUsers_UserId" Association="Self.FK_AspNetUserTokens_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserTokens" EntitySet="AspNetUserTokens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Obrazovanje_ProfilAplikanta_ProfilAplikantaId" Association="Self.FK_Obrazovanje_ProfilAplikanta_ProfilAplikantaId">
+      <End Role="ProfilAplikanta" EntitySet="ProfilAplikanta" />
+      <End Role="Obrazovanje" EntitySet="Obrazovanje" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oglas_ProfilKompanije_ProfilKompanijeId" Association="Self.FK_Oglas_ProfilKompanije_ProfilKompanijeId">
+      <End Role="ProfilKompanije" EntitySet="ProfilKompanije" />
+      <End Role="Oglas" EntitySet="Oglas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oglas_Status_StatusId" Association="Self.FK_Oglas_Status_StatusId">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Oglas" EntitySet="Oglas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OglasProfilAplikanta_Oglas_OglasiId" Association="Self.FK_OglasProfilAplikanta_Oglas_OglasiId">
+      <End Role="Oglas" EntitySet="Oglas" />
+      <End Role="OglasProfilAplikanta" EntitySet="OglasProfilAplikanta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OglasProfilAplikanta_ProfilAplikanta_ProfiliAplikanataId" Association="Self.FK_OglasProfilAplikanta_ProfilAplikanta_ProfiliAplikanataId">
+      <End Role="ProfilAplikanta" EntitySet="ProfilAplikanta" />
+      <End Role="OglasProfilAplikanta" EntitySet="OglasProfilAplikanta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProfilAplikanta_AdresaAplikanta_AdresaId" Association="Self.FK_ProfilAplikanta_AdresaAplikanta_AdresaId">
+      <End Role="AdresaAplikanta" EntitySet="AdresaAplikanta" />
+      <End Role="ProfilAplikanta" EntitySet="ProfilAplikanta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProfilKompanije_AdresaKompanije_AdresaId" Association="Self.FK_ProfilKompanije_AdresaKompanije_AdresaId">
+      <End Role="AdresaKompanije" EntitySet="AdresaKompanije" />
+      <End Role="ProfilKompanije" EntitySet="ProfilKompanije" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RadnoIskustvo_ProfilAplikanta_ProfilAplikantaId" Association="Self.FK_RadnoIskustvo_ProfilAplikanta_ProfilAplikantaId">
+      <End Role="ProfilAplikanta" EntitySet="ProfilAplikanta" />
+      <End Role="RadnoIskustvo" EntitySet="RadnoIskustvo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vjestine_ProfilAplikanta_ProfilAplikantaId" Association="Self.FK_Vjestine_ProfilAplikanta_ProfilAplikantaId">
+      <End Role="ProfilAplikanta" EntitySet="ProfilAplikanta" />
+      <End Role="Vjestine" EntitySet="Vjestine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
