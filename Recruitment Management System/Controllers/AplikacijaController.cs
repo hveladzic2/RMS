@@ -116,16 +116,18 @@ namespace Recruitment_Management_System.Controllers
             }
         }
         [NonAction]
-        public string SaveImage(IFormFile imageFile)
+        public string SaveImage(IFormFile file)
         {
-            string imageName = new String(Path.GetFileNameWithoutExtension(imageFile.FileName));
-            imageName = imageName + Path.GetExtension(imageFile.FileName);
-            var imagePath = Path.Combine(_hostEnvironment.ContentRootPath, "Images", imageName);
-            using (var fileStream = new FileStream(imagePath, FileMode.Create, FileAccess.Write))
-            {
-                 imageFile.CopyToAsync(fileStream);
-            }
-            return imageName;
+            string fileName = new String(Path.GetFileNameWithoutExtension(file.FileName));
+            fileName = fileName + Path.GetExtension(file.FileName);
+            string folderPath = "Images/";
+            folderPath += file.FileName;
+
+            string serverFolder = Path.Combine(_hostEnvironment.ContentRootPath, folderPath);
+
+            file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+
+            return fileName;
         }
         [NonAction]
         public string SaveFile(IFormFile file)
